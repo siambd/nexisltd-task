@@ -43,15 +43,18 @@ const SignUp3 = () => {
               <div id="PasswordHelp" class="form-text">
                 Your Password must be atleast 8 character
               </div>
+              <div id="PasswordHelp" class="form-text">
+                You will be automatically redirect to login page after signup . 
+              </div>
             </div>
 
-            <div className="">
-              <div className="d-flex">
+            <div className="d-flex justify-content-around my-3">
+              <div className="">
                 <Link to="/SignUp2">
                 <button type="button" class="btn btn-link">Back</button>
                 </Link>
               </div>
-              <div>
+              <div className="">
               <button type="submit" class="btn btn-primary">Sign up</button>
      
               </div>

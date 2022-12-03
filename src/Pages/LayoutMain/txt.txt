@@ -1,0 +1,4 @@
+<div className='d-flex flex-column'>
+                     <img src={logo} alt="" className='w-25' />
+                     <img src={banner} alt="" />
+                   </div>

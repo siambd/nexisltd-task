@@ -57,15 +57,15 @@ const Login = () => {
             Your Password must be atleast 8 character
           </div>
         </div>
-        <div>
+        <div  className='d-flex  justify-content-center'>
           <button type="submit" class="btn btn-primary">
             Login
           </button>
         </div>
       </form>
 
-      <div className='d-flex'>
-                        <p> Dont have any account ? </p>
+      <div className='d-flex  justify-content-center'>
+                        <p className='pt-2'> Dont have any account ? </p>
                         <Link to= '/'>
                         <button type="button" class="btn btn-link fw-semibold">Signup here </button>
                         </Link>

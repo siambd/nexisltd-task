@@ -25,8 +25,8 @@ const SignUp1 = () => {
                         <input className="form-control" type="email" placeholder="Write email addresss" aria-label="default input example" />
                         </div>
 
+                      <div className='d-flex justify-content-around my-3'>
                       <div className=''>
-                      <div className='d-flex'>
                         <Link to= '/'>
                         <button type="button" class="btn btn-link fw-semibold"> Back </button>
                         </Link>
