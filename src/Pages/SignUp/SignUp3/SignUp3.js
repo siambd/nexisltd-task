@@ -1,13 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const SignUp1 = () => {
+const SignUp3 = () => {
+    const navigate = useNavigate();
+    const handleSignUp = event => {
+        event.preventDefault();
+        const user = {
+            first_name: "First Name",
+            last_Name: "Last Name",
+            phone_number: "0000000000",
+            email: "abc@example.com",
+            password: "SuperSecretPassword"
+        };
+        
+        fetch('https://test.nexisltd.com/signup', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data => {
+            localStorage.setItem('ultimateAccessToken', data.access_token)
+            navigate('/Login')
+        })
+}
+
   return (
     <div>
       <div>
         <div>
           <h1> Signup Here</h1>
-          <form>
+          <form onSubmit={handleSignUp}>
             <div>
               <input
                 className="form-control"
@@ -22,18 +47,13 @@ const SignUp1 = () => {
 
             <div className="">
               <div className="d-flex">
-                <Link to="/">
-                  <button type="button" class="btn btn-link fw-semibold">
-                    {" "}
-                    Back{" "}
-                  </button>
+                <Link to="/SignUp2">
+                <button type="button" class="btn btn-link">Back</button>
                 </Link>
               </div>
               <div>
-                <button type="submit" class="btn btn-primary">
-                  {" "}
-                  Sign Up
-                </button>
+              <button type="submit" class="btn btn-primary">Sign up</button>
+     
               </div>
             </div>
           </form>
@@ -43,4 +63,4 @@ const SignUp1 = () => {
   );
 };
 
-export default SignUp1;
+export default SignUp3;

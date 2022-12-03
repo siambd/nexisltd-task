@@ -24,7 +24,7 @@ const Login = () => {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem("ultimateAccessToken", data.access_token);
-        navigate("/attendance");
+        navigate("/AttendanceForm");
       });
   };
   return (

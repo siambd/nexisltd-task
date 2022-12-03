@@ -5,6 +5,7 @@ import Login from '../Pages/Login/Login'
 import SignUp1 from '../Pages/SignUp/SignUp1/SignUp1';
 import SignUp2 from '../Pages/SignUp/SignUp2/SignUp2'
 import SignUp3 from '../Pages/SignUp/SignUp3/SignUp3'
+import AttendanceForm from '../Pages/AttendenceForm/AttendenceForm'
 
 
 
@@ -16,12 +17,13 @@ const router = createBrowserRouter([
             { path:   '/', element: <SignUp1></SignUp1> },
             { path: '/Login', element: <Login></Login> },
             { path: '/SignUp2', element: <SignUp2></SignUp2> },
-            { path: '/SignUp3', element: <SignUp3></SignUp3>}
+            { path: '/SignUp3', element: <SignUp3></SignUp3>},
+           
 
            
         ]
     },
-    { path: '/Login', element: <Login></Login>}
+    { path: '/AttendanceForm', element: <AttendanceForm></AttendanceForm>}
 ]
 
 )
