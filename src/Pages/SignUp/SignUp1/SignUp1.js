@@ -13,7 +13,7 @@ const SignUp1 = () => {
             <div>
                 <div>
                     <div className='SignUp1Heading'>
-                    <h2 className="text-center my-5"> Signup Form</h2>
+                    <h2 className="text-center my-5"> Signup Form 1</h2>
                     </div>
                     <form >
                         <div className='mb-5'>
