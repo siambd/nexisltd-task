@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../../assets/image/title.png';
 
 const Attendance = () => {
-    const [ setLoader] = useState(true);
+    // const [ setLoader] = useState(true);
 
     const [attendanceInfo, setAttendanceInfo] = useState([]);
     useEffect(() => {
