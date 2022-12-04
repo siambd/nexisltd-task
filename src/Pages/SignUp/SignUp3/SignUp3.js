@@ -31,7 +31,7 @@ const SignUp3 = () => {
     <div>
       <div>
         <div>
-          <h1> Signup Here</h1>
+          <h2 className="text-center my-4"> Signup Here</h2>
           <form onSubmit={handleSignUp}>
             <div>
               <input

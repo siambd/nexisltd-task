@@ -8,7 +8,7 @@ const SignUp1 = () => {
         <div>
             <div>
                 <div>
-                    <h1> Signup Here</h1>
+                    <h2 className='text-center my-4'> Signup Here</h2>
                     <form >
 
                     <div className="row">
@@ -22,7 +22,7 @@ const SignUp1 = () => {
                        
 
                         <div>
-                        <input className="form-control" type="email" placeholder="Write email addresss" aria-label="default input example" />
+                        <input className="form-control my-3" type="email" placeholder="Write email addresss" aria-label="default input example" />
                         </div>
 
                       <div className='d-flex justify-content-around my-3'>

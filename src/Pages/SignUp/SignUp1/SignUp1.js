@@ -10,10 +10,10 @@ const SignUp1 = () => {
         <div>
             <div>
                 <div>
-                    <h1> Signup Here</h1>
+                    <h2 className="text-center my-5"> Signup Here</h2>
                     <form >
                         <div className=''>
-                        <input className="form-control mb-3 mt-3 " type="text" placeholder="Write First Name" aria-label="default input example"  required />
+                        <input className="form-control my-3 " type="text" placeholder="Write First Name" aria-label="default input example"  required />
                         <input className="form-control" type="text" placeholder="Write Last Name" aria-label="default input example" />
                         </div>
 

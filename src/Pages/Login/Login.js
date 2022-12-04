@@ -29,7 +29,7 @@ const Login = () => {
   };
   return (
     <div>
-      <h1> Login Form </h1>
+      <h2 className="text-center my-5"> Login Form </h2>
       <form onSubmit={handleLogin}>
         <div className="mb-3">
           <label for="exampleInputEmail1" class="form-label">
