@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SignUp.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-// import { Link } from 'react-router-dom';
+
+
 
 const SignUp1 = () => {
     return (
@@ -22,15 +24,15 @@ const SignUp1 = () => {
                     <div className='d-flex justify-content-center my-3'>
                        
                         <Link to='/SignUp2'>
-                        <button type="button" class="btn btn-primary btn-lg nextStepButton">Next step <FontAwesomeIcon icon="fa-regular fa-arrow-right" /> </button> 
+                        <button type="button" class="btn btn-primary btn-lg nextStepButton">Next step <FontAwesomeIcon icon={faArrowRight}/>  </button> 
                         </Link>
                     </div>
 
                     </form>
                     <div className='d-flex justify-content-center'>
-                        <p className='pt-2'> Aleady have an Account ? </p>
+                        <p className='pt-2 text-secondary text-decoration-none'> Aleady have an Account ? </p>
                         <Link to= '/Login'>
-                        <button type="button" class="btn btn-link fw-semibold">Login here </button>
+                        <button type="button" class="btn btn-link fw-semibold">Login here  </button>
                         </Link>
                     </div>
                 </div>

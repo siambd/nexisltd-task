@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import './SignUp3.css'
 
 const SignUp3 = () => {
     const navigate = useNavigate();
@@ -31,9 +32,10 @@ const SignUp3 = () => {
     <div>
       <div>
         <div>
-          <h2 className="text-center my-4"> Signup Here</h2>
+          <div className="SignUp3Heading"> <h2 className="text-center my-4"> Signup Form</h2>
+          </div>
           <form onSubmit={handleSignUp}>
-            <div>
+            <div className="my-5">
               <input
                 className="form-control"
                 type="password"
@@ -41,22 +43,24 @@ const SignUp3 = () => {
                 aria-label="default input example"
                 required
               />
+              <div className="ps-1 ms-5">
               <div id="PasswordHelp" class="form-text">
                 Your Password must be atleast 8 character
               </div>
               <div id="PasswordHelp" class="form-text">
                 You will be automatically redirect to login page after signup . 
               </div>
+              </div>
             </div>
 
-            <div className="d-flex justify-content-around my-3">
+            <div className="d-flex justify-content-around  signUpBackButton">
               <div className="">
                 <Link to="/SignUp2">
-                <button type="button" class="btn btn-link">Back</button>
+                <button type="button" class="btn btn-link text-secondary text-decoration-none pt-3">Back</button>
                 </Link>
               </div>
               <div className="">
-              <button type="submit" class="btn btn-primary">Sign up</button>
+              <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
      
               </div>
             </div>

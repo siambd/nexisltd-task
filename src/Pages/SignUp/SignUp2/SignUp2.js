@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 import './SignUp2.css'
 
 
@@ -32,12 +35,12 @@ const SignUp1 = () => {
                       <div className='d-flex justify-content-around nextStepBackButton '>
                       <div className=''>
                         <Link to= '/'>
-                        <button type="button" class="btn btn-link fw-semibold"> Back </button>
+                        <button type="button" class="btn btn-link fw-semibold text-secondary text-decoration-none pt-3"> Back </button>
                         </Link>
                           </div>
                         <div>
                           <Link to='/SignUp3'>
-                          <button type="submit" class="btn btn-lg btn-primary">Next step</button>
+                          <button type="submit" class="btn btn-lg btn-primary">Next step  <FontAwesomeIcon icon={faArrowRight}/></button>
                           </Link>
                         </div>
                       </div>
