@@ -8,24 +8,28 @@ const SignUp1 = () => {
         <div>
             <div>
                 <div>
-                    <h2 className='text-center my-4'> Signup Here</h2>
+                    <div className='SignUp2Heading'>
+                    <h2 className='text-center my-4 '> Signup Form</h2>
+                    </div>
                     <form >
 
-                    <div className="row">
-                        <div className="col">
-                           <input type="number" class="form-control phoneCode" placeholder="+880" aria-label="First name" />
+                    <div className="d-flex mb-5">
+                        <div className="">
+                           <input type="number" class="form-control phoneCode" placeholder="+880" aria-label="First name" required/>
                         </div>
-                        <div className="col">
-                             <input type="number" className="form-control phoneNumber" placeholder="123xxxxx" aria-label="Last name" />
+                        <div className="phoneInput">
+                             <input type="number" className="form-control phoneNumber" placeholder="123xxxxx" aria-label="Last name" 
+                             required/>
                         </div>
                  </div>
                        
 
                         <div>
-                        <input className="form-control my-3" type="email" placeholder="Write email addresss" aria-label="default input example" />
+                        <input className="form-control my-3" type="email" placeholder="Write email addresss" aria-label="default input example" 
+                        required/>
                         </div>
 
-                      <div className='d-flex justify-content-around my-3'>
+                      <div className='d-flex justify-content-around nextStepBackButton '>
                       <div className=''>
                         <Link to= '/'>
                         <button type="button" class="btn btn-link fw-semibold"> Back </button>
@@ -33,7 +37,7 @@ const SignUp1 = () => {
                           </div>
                         <div>
                           <Link to='/SignUp3'>
-                          <button type="button" class="btn btn-primary">Next step</button>
+                          <button type="submit" class="btn btn-lg btn-primary">Next step</button>
                           </Link>
                         </div>
                       </div>

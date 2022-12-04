@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/image/title.png";
 import banner from "../../assets/image/banner.png";
 import { Outlet } from "react-router-dom";
+import './Main.css'
 
 
 const main = () => {
@@ -14,8 +15,10 @@ const main = () => {
             <img src={banner} alt="" />
           </div>
 
-          <div className="shadow p-3 mb-5 bg-white rounded">
+          <div className="">
+          <div className=" shadow p-3 bg-white rounded mt-5">
             <Outlet></Outlet>
+          </div>
           </div>
         </div>
       </div>

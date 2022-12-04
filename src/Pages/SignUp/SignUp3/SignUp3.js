@@ -39,6 +39,7 @@ const SignUp3 = () => {
                 type="password"
                 placeholder="Set your password"
                 aria-label="default input example"
+                required
               />
               <div id="PasswordHelp" class="form-text">
                 Your Password must be atleast 8 character

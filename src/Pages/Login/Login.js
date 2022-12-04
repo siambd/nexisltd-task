@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import './Login.css'
+import "./Login.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -29,48 +29,49 @@ const Login = () => {
   };
   return (
     <div>
-      <h2 className="text-center my-5"> Login Form </h2>
+      <div className="loginHeading">
+        <h2 className="text-center my-5 "> Login Form </h2>
+      </div>
       <form onSubmit={handleLogin}>
         <div className="mb-3">
-          <label for="exampleInputEmail1" class="form-label">
-            Email address
-          </label>
+          <label for="exampleInputEmail1" class="form-label"></label>
           <input
             type="email"
             placeholder="Enter Your email"
-            className="form-control"
+            className="form-control mb-5"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
+            required
           />
 
-          <label for="exampleInputPassword1" class="form-label">
-            Password
-          </label>
+          <label for="exampleInputPassword1" class="form-label"></label>
           <input
             type="password"
             placeholder="Enter Your password"
             className="form-control"
             id="exampleInputPassword1"
             pattern=".{8,}"
+            required
           />
           <div id="PasswordHelp" class="form-text">
             Your Password must be atleast 8 character
           </div>
         </div>
-        <div  className='d-flex  justify-content-center'>
-          <button type="submit" class="btn btn-primary">
-            Login
+        <div className="d-flex  justify-content-center loginButton">
+          <button type="submit" class="btn btn-lg btn-primary">
+            Log In
           </button>
         </div>
       </form>
 
-      <div className='d-flex  justify-content-center'>
-                        <p className='pt-2'> Dont have any account ? </p>
-                        <Link to= '/'>
-                        <button type="button" class="btn btn-link fw-semibold">Signup here </button>
-                        </Link>
-                    </div>
-    
+      <div className="d-flex  justify-content-center">
+        <p className="pt-2"> Dont have any account ? </p>
+        <Link to="/">
+          <button type="button" class="btn btn-link fw-semibold">
+            Signup here{" "}
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

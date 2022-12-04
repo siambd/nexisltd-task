@@ -10,17 +10,19 @@ const SignUp1 = () => {
         <div>
             <div>
                 <div>
-                    <h2 className="text-center my-5"> Signup Here</h2>
+                    <div className='SignUp1Heading'>
+                    <h2 className="text-center my-5"> Signup Form</h2>
+                    </div>
                     <form >
-                        <div className=''>
-                        <input className="form-control my-3 " type="text" placeholder="Write First Name" aria-label="default input example"  required />
-                        <input className="form-control" type="text" placeholder="Write Last Name" aria-label="default input example" />
+                        <div className='mb-5'>
+                        <input required className="form-control my-3 mb-5 " type="text" placeholder="Write First Name" aria-label="default input example"   />
+                        <input className="form-control pt-4" type="text" placeholder="Write Last Name" aria-label="default input example" required />
                         </div>
 
                     <div className='d-flex justify-content-center my-3'>
                        
                         <Link to='/SignUp2'>
-                        <button type="button" class="btn btn-primary">Next step <FontAwesomeIcon icon="fa-regular fa-arrow-right" /> </button> 
+                        <button type="button" class="btn btn-primary btn-lg nextStepButton">Next step <FontAwesomeIcon icon="fa-regular fa-arrow-right" /> </button> 
                         </Link>
                     </div>
 
