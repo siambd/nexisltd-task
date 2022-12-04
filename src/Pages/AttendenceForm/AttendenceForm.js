@@ -14,7 +14,7 @@ const Attendance = () => {
             .then(res => res.json())
             .then(data => {
                 setAttendanceInfo(data);
-                setLoader(false);
+                // setLoader(false);
             })
     }, [])
 
