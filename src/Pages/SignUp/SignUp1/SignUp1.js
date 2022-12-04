@@ -24,7 +24,7 @@ const SignUp1 = () => {
                     <div className='d-flex justify-content-center my-3'>
                        
                         <Link to='/SignUp2'>
-                        <button type="button" class="btn btn-primary btn-lg nextStepButton">Next step <FontAwesomeIcon icon={faArrowRight}/>  </button> 
+                        <button type="button" class="btn btn-primary btn-xl-lg nextStepButton">Next step <FontAwesomeIcon icon={faArrowRight}/>  </button> 
                         </Link>
                     </div>
 

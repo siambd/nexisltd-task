@@ -53,7 +53,7 @@ const Login = () => {
             pattern=".{8,}"
             required
           />
-          <div id="PasswordHelp" class="form-text">
+          <div id="PasswordHelp" className="form-text ps-1 ms-5">
             Your Password must be atleast 8 character
           </div>
         </div>

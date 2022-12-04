@@ -32,15 +32,15 @@ const SignUp1 = () => {
                         required/>
                         </div>
 
-                      <div className='d-flex justify-content-around nextStepBackButton '>
+                      <div className='d-flex justify-content-xxl-around nextStepBackButton'>
                       <div className=''>
                         <Link to= '/'>
-                        <button type="button" class="btn btn-link fw-semibold text-secondary text-decoration-none pt-3"> Back </button>
+                        <button type="button" class="btn btn-link fw-semibold text-secondary text-decoration-none "> Back </button>
                         </Link>
                           </div>
                         <div>
                           <Link to='/SignUp3'>
-                          <button type="submit" class="btn btn-lg btn-primary">Next step  <FontAwesomeIcon icon={faArrowRight}/></button>
+                          <button type="submit" class="btn btn-xl-lg btn-primary">Next step  <FontAwesomeIcon icon={faArrowRight}/></button>
                           </Link>
                         </div>
                       </div>

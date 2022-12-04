@@ -10,13 +10,14 @@ const main = () => {
     <div>
       <div className="container  ">
         <div className="  d-xxl-flex d-md-flex align-items-center">
-          <div className="   ">
-            <img src={logo} alt="" className="img-fluid" />
-            <img src={banner} alt="" />
+          <div className=" me-5  ">
+            <div className="img-fluid w-25"> <img src={logo} alt="" className="img-fluid " /></div>
+            <div ><img src={banner} alt="" /></div>
+           
           </div>
 
-          <div className="">
-          <div className=" shadow p-3 bg-white rounded mt-5">
+          <div className="mt-sd-0 mt-5">
+          <div className=" shadow p-3 bg-white rounded mt- mt-md-0 ms-5">
             <Outlet></Outlet>
           </div>
           </div>

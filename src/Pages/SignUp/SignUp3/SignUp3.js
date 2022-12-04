@@ -56,11 +56,11 @@ const SignUp3 = () => {
             <div className="d-flex justify-content-around  signUpBackButton">
               <div className="">
                 <Link to="/SignUp2">
-                <button type="button" class="btn btn-link text-secondary text-decoration-none pt-3">Back</button>
+                <button type="button" class="btn btn-link text-secondary text-decoration-none ">Back</button>
                 </Link>
               </div>
               <div className="">
-              <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
+              <button type="submit" class="btn btn-xl-lg btn-primary">Sign up</button>
      
               </div>
             </div>

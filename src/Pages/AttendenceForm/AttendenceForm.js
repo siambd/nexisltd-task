@@ -41,20 +41,20 @@ const Attendance = () => {
         attendanceInfoArray.push(value)
     }
 
-//    loaader 
-
 
 
     return (
-        <div className='container mx-auto'>
-            <div className="navbar bg-base-100">
-                <img src={logo} alt="logo" className=' w-40 h-14' />
+        <div className='container'>
+            <div className="navbar  ">
+                <img  src={logo} alt="logo" className='img-fluid w-15' />
             </div>
-            <div className='md:mx-0 mx-3'>
-                <h1 className='md:w-[480px] w-full mx-auto bg-blue-600 text-white md:text-4xl text-2xl text-center font-semibold rounded-md mt-5 mb-12 py-4 px-10'>Attendance Information</h1>
+            <div className='d-flex justify-content-center my-3 '>
+            <div className='bg-primary border rounded-3'>
+                <h1 className='text-white text-center  py-3 px-5 '>Attendance Information</h1>
             </div>
-            <div className="overflow-x-auto">
-                <table className="table w-full">
+            </div>
+            <div className="">
+                <table className="table ">
                     <thead>
                         <tr>
                             <th></th>
