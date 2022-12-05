@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './SignUp.css'
+import './SignUp1.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,7 +13,7 @@ const SignUp1 = () => {
             <div>
                 <div>
                     <div className='SignUp1Heading'>
-                    <h2 className="text-center my-5"> Signup Form 1</h2>
+                    <h2 className="text-center my-5"> Signup Form </h2>
                     </div>
                     <form >
                         <div className='mb-5'>
@@ -21,7 +21,7 @@ const SignUp1 = () => {
                         <input className="form-control pt-4" type="text" placeholder="Write Last Name" aria-label="default input example" required />
                         </div>
 
-                    <div className='d-flex justify-content-center my-3'>
+                    <div className='d-flex justify-content-center pt-3 '>
                        
                         <Link to='/SignUp2'>
                         <button type="button" class="btn btn-primary btn-xl-lg nextStepButton">Next step <FontAwesomeIcon icon={faArrowRight}/>  </button> 

@@ -46,9 +46,9 @@ const Attendance = () => {
     return (
         <div className='container'>
             <div className="navbar  ">
-                <img  src={logo} alt="logo" className='img-fluid w-15' />
+                <img  src={logo} alt="logo" className='img-fluid w-auto' />
             </div>
-            <div className='d-flex justify-content-center my-3 '>
+            <div className='d-flex justify-content-center my-3 pb-4 '>
             <div className='bg-primary border rounded-3'>
                 <h1 className='text-white text-center  py-3 px-5 '>Attendance Information</h1>
             </div>

@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div>
       <div className="loginHeading">
-        <h2 className="text-center my-5 "> Login Form </h2>
+        <h2 className="text-center my-1 "> Login Form </h2>
       </div>
       <form onSubmit={handleLogin}>
         <div className="mb-3">
